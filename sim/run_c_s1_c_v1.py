@@ -203,31 +203,32 @@ def run_c_s1_transient():
     i1_t = sol.y[0]
     i2_t = sol.y[2]
 
-    fig, axes = plt.subplots(1, 2, figsize=(12.4, 4.8))
+    fig, axes = plt.subplots(1, 2, figsize=(13.0, 5.6), sharey=True, constrained_layout=True)
+    fig.suptitle(f"Coupled-circuit transient at f₀ = 500 kHz (d = 5 cm, R_L = {RL_FIXED:g} Ω, "
+                 f"R = {R1:g} Ω, Vs = {VS_PEAK:g} V pk)", fontsize=14)
 
-    axes[0].plot(t_us, i1_t, color="tab:blue", linewidth=1.1, label="Primary current i₁(t) [A]")
-    axes[0].plot(t_us, i2_t, color="tab:orange", linewidth=1.1, label="Secondary current i₂(t) [A]")
+    axes[0].plot(t_us, i1_t, color="tab:blue", linewidth=1.1, label="primary i₁(t)")
+    axes[0].plot(t_us, i2_t, color="tab:orange", linewidth=1.1, label="secondary i₂(t)")
     axes[0].set_xlim(0, 50)
     axes[0].set_xlabel("Time t [µs]")
     axes[0].set_ylabel("Current [A]")
-    axes[0].set_title("(a) Transient Ring-Up at f₀ = 500 kHz (d = 5 cm, R_L = 6 Ω)")
-    axes[0].legend(loc="upper right", fontsize=10.5)
+    axes[0].set_title("(a) Ring-up from switch-on")
 
     mask_zoom = (t_us >= 50.0) & (t_us <= 56.0)
     axes[1].plot(t_us[mask_zoom], i1_t[mask_zoom], color="tab:blue", linestyle="-", linewidth=2.2,
-                 label="Primary i₁(t) (reference phase 0°)")
+                 label="primary i₁(t), reference phase")
     axes[1].plot(t_us[mask_zoom], i2_t[mask_zoom], color="tab:orange", linestyle="--", linewidth=2.2,
-                 label="Secondary i₂(t) (lags i₁ by 90° = 0.50 µs)")
+                 label="secondary i₂(t), lags i₁ by 90° (T₀/4 = 0.50 µs)")
     axes[1].axhline(0.0, color="gray", linestyle=":", linewidth=1.0)
     axes[1].set_xlim(50.0, 56.0)
     axes[1].set_xlabel("Time t [µs]")
-    axes[1].set_ylabel("Steady-state current [A]")
-    axes[1].set_title("(b) Steady-State Zoom: i₂(t) Lags i₁(t) by Exactly 90° (T₀/4 = 0.5 µs)")
-    axes[1].legend(loc="upper right", fontsize=10.5)
+    axes[1].set_title("(b) Steady state: i₂ lags i₁ by 90°")
+    for ax in axes:                                   # legends below the plots, never over the curves
+        ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2, fontsize=10.5, frameon=False)
 
     style.save_fig(fig, "fig_c_s1_transient")
     MEDIA_DIR.mkdir(parents=True, exist_ok=True)
-    fig.savefig(MEDIA_DIR / "ltspice_transient_buildup.png", dpi=300)
+    fig.savefig(MEDIA_DIR / "ltspice_transient_buildup.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
