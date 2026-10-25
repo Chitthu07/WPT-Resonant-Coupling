@@ -3,4 +3,3 @@ scipy
 matplotlib
 pandas
 pytest
-python-pptx  # only for the poster/ scripts

@@ -59,9 +59,6 @@ Individual steps (all from the repository root):
 | `python -m sim.proximity_check` | proximity-effect resistance of the spiral (thin-skin and exact Bessel) |
 | `python -m sim.run_ab` | all Member A and B scripts in dependency order (called by `make_figures`) |
 
-Poster scripts (need `python-pptx`): `poster/make_section5_figures.py`, `poster/make_c_p1_figure.py`,
-`poster/fill_B_sections.py`, `poster/fill_C_sections.py`, `poster/c_p1_numbers.py` (numbers sheet), `poster/place_logo.py`.
-
 ## Repository layout
 
 ```
