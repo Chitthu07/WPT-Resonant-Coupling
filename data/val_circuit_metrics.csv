@@ -1,0 +1,13 @@
+check,condition,max_rel_error,reference
+"eta(d), fixed R_L","f = f0, d = 0.5-15 cm",5.151454538369672e-16,B-T2 closed form
+"eta_max(d), R_L,opt(d)","f = f0, d = 0.5-15 cm",5.761685762536638e-16,B-T2 closed form
+"P_L(d), fixed R_L","f = f0, d = 0.5-15 cm",6.570307674403882e-16,B-T2 closed form
+"|I1|(d), fixed R_L","f = f0, d = 0.5-15 cm",3.5738830322908653e-16,B-T2 closed form
+"eta(f), d = 1 cm","0.6-1.6 f0, fixed R_L",3.1868331161432026e-15,B-T1 Sec. 5 elimination
+"P_L(f), d = 1 cm","0.6-1.6 f0, fixed R_L",2.7008647056123527e-15,B-T1 Sec. 5 elimination
+"eta(f), d = 2 cm","0.6-1.6 f0, fixed R_L",5.1225571853553265e-15,B-T1 Sec. 5 elimination
+"P_L(f), d = 2 cm","0.6-1.6 f0, fixed R_L",2.3861909557344607e-15,B-T1 Sec. 5 elimination
+"eta(f), d = 5 cm","0.6-1.6 f0, fixed R_L",8.084807020867876e-15,B-T1 Sec. 5 elimination
+"P_L(f), d = 5 cm","0.6-1.6 f0, fixed R_L",2.0047862813905344e-15,B-T1 Sec. 5 elimination
+"eta(f), d = 10 cm","0.6-1.6 f0, fixed R_L",8.74456245385159e-15,B-T1 Sec. 5 elimination
+"P_L(f), d = 10 cm","0.6-1.6 f0, fixed R_L",2.360262058102653e-15,B-T1 Sec. 5 elimination

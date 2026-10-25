@@ -1,0 +1,4 @@
+d_cm,k,f_peak_ltspice_kHz,f_peak_solver_kHz,PL_peak_ltspice_W,PL_peak_solver_W,eta_f0_ltspice_pct,eta_f0_solver_pct,phase_I2_I1_f0_ltspice_deg,max_err_eta_pct
+2,0.321109,437.498,437.498,1.63511,1.63511,92.046,92.046,-89.998,2.122e-10
+5,0.111189,483.500,483.500,2.14774,2.14774,85.905,85.905,-89.998,4.024e-10
+10,0.029895,500.003,500.003,6.35858,6.35858,43.542,43.542,-89.998,5.009e-10

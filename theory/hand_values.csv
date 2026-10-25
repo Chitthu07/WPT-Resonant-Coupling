@@ -1,0 +1,19 @@
+quantity,value,unit,method
+L1,1.712793e-05,H,filament sum
+L1,1.777848e-05,H,Mohan current sheet
+L1,1.848330e-05,H,modified Wheeler (octagonal approx.)
+L2,1.712793e-05,H,filament sum
+L2,1.777848e-05,H,Mohan current sheet
+L2,1.848330e-05,H,modified Wheeler (octagonal approx.)
+M_d1cm,8.789144e-06,H,"coaxial elliptic, turn-pair sum"
+k_d1cm,5.131468e-01,-,"M/sqrt(L1 L2), L from filament sum"
+M_d2cm,5.500538e-06,H,"coaxial elliptic, turn-pair sum"
+k_d2cm,3.211442e-01,-,"M/sqrt(L1 L2), L from filament sum"
+M_d3cm,3.720799e-06,H,"coaxial elliptic, turn-pair sum"
+k_d3cm,2.172357e-01,-,"M/sqrt(L1 L2), L from filament sum"
+M_d5cm,1.904945e-06,H,"coaxial elliptic, turn-pair sum"
+k_d5cm,1.112186e-01,-,"M/sqrt(L1 L2), L from filament sum"
+M_d8cm,8.248997e-07,H,"coaxial elliptic, turn-pair sum"
+k_d8cm,4.816107e-02,-,"M/sqrt(L1 L2), L from filament sum"
+M_d10cm,5.122519e-07,H,"coaxial elliptic, turn-pair sum"
+k_d10cm,2.990739e-02,-,"M/sqrt(L1 L2), L from filament sum"
