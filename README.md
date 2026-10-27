@@ -5,7 +5,7 @@ EE2025 Engineering Electromagnetics course project, Department of Electrical Eng
 
 Two identical 10-turn, 10 cm air-core spiral coils, each series-tuned to 500 kHz, transfer power across a 1–10 cm gap.
 This repository contains every model, simulation, figure and write-up behind our poster
-(**[`poster/EM_WPT_poster.pdf`](poster/EM_WPT_poster.pdf)**, A0; source `poster/EM_WPT_poster_v2_plane_wave.pptx`). No prototype was built: validation is model against model
+(**[`poster/EM_WPT_poster.pdf`](poster/EM_WPT_poster.pdf)**, A0; source `poster/EM_WPT_poster_v2_portrait.pptx`). No prototype was built: validation is model against model
 (closed form ↔ numerical ↔ LTspice).
 
 ## Key results
